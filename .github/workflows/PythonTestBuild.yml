@@ -29,5 +29,6 @@ jobs:
       run: |
         pip install django
         
-    - name: Exécuter le script Python
-      run: python manage.py
+    - name: Lancer le projet Django
+      run: |
+        python manage.py runserver
