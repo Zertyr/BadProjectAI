@@ -1,0 +1,14 @@
+name: Pull Request Closed
+run-name: ${{ github.actor }} closed pr 🚀
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  notify_on_pr_acceptance:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Vérifier si la PR est fusionnée
+      if: github.event.pull_request.merged == true
+      run: echo "La PR a été acceptée et fusionnée."
