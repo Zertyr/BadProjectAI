@@ -26,4 +26,4 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Exécuter le script Python
-      run: python mon_script.py
+      run: python manage.py
