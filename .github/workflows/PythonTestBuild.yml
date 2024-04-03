@@ -31,4 +31,10 @@ jobs:
         
     - name: Lancer le projet Django
       run: |
-        python manage.py runserver --noreload
+        python manage.py runserver &
+
+          # Attendre 5 secondes
+        sleep 5
+  
+        # Terminer le processus
+        kill $!
