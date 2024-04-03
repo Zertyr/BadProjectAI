@@ -31,4 +31,4 @@ jobs:
         
     - name: Lancer le projet Django
       run: |
-        python manage.py runserver
+        python manage.py runserver --noreload
