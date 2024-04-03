@@ -25,10 +25,5 @@ jobs:
     - name: Checkout du code
       uses: actions/checkout@v2
       
-    - name: Utiliser Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
-      
     - name: Exécuter le script Python
       run: python mon_script.py
