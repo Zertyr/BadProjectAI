@@ -24,6 +24,10 @@ jobs:
       
     - name: Checkout du code
       uses: actions/checkout@v2
-      
+
+    - name: Installer Django
+      run: |
+        pip install django
+        
     - name: Exécuter le script Python
       run: python manage.py
