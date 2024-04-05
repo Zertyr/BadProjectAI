@@ -59,3 +59,19 @@
 
 - Pour installer VADER : pip install vaderSentiment
 
+Créez un nouvel environnement virtuel :
+Utilisez la commande python -m venv pour créer un nouvel environnement virtuel dans le répertoire de votre projet. Vous pouvez nommer ce répertoire comme vous le souhaitez, par exemple venv.
+
+python -m venv venv
+
+Activez l'environnement virtuel :
+Activez l'environnement virtuel que vous venez de créer en exécutant le script d'activation correspondant. Selon votre système d'exploitation, la commande peut varier :
+
+Sur Windows :
+venv\Scripts\activate
+Sur macOS/Linux :
+
+bash
+source venv/bin/activate
+
+Pour les tests, aller dans le dossier features et taper : behave
