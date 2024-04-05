@@ -1,25 +1,18 @@
-Feature: vader_analyser
+# Fichier : features/vader_analyser.feature
 
-    Scenario : A user put a positive string in the tchat and we answer with a positive feelings
+Feature: Analyseur de sentiments VADER
 
-        Given a positive string chain
+Scenario: Un utilisateur entre une chaîne de caractères positive dans le tchat et nous répondons avec des sentiments positifs
+    Given une chaîne de caractères positive
+    When l'utilisateur démarre la fonction VADER
+    Then l'analyseur envoie sentiment
 
-        When start vader function
+Scenario: Un utilisateur entre une chaîne de caractères négative dans le tchat et nous répondons avec des sentiments négatifs
+    Given une chaîne de caractères négative
+    When l'utilisateur démarre la fonction VADER
+    Then l'analyseur envoie sentiment
 
-        Then analyser send a "positive sentiment"
-
-    Scenario: A user put a negative string chain in the tchat and we answer with a negative feelings
- 
-        Given a negative string chain
-    
-        When start vader function
-    
-        Then analyser send "negative sentiment"
-    
-    Scenario: A user put a neutral string chain in the tchat and we answer with a mixed feelings
- 
-        Given a neutral string chain
-    
-        When start vader function
-    
-        Then analyzer send "neutral sentiment"
+Scenario: Un utilisateur entre une chaîne de caractères neutre dans le tchat et nous répondons avec des sentiments mixtes
+    Given une chaîne de caractères neutre
+    When l'utilisateur démarre la fonction VADER
+    Then l'analyseur envoie sentiment
