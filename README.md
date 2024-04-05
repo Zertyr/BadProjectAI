@@ -51,7 +51,7 @@
           Vous pouvez l'installer en exécutant la commande suivante : pip install django
 
 
-- Pour lancer le serveur Django : py manage.py runserver
+- Pour lancer le serveur Django : py manage.py runserver or python manage.py runserver 
            
 - Pour installer Aloe-django : pip install aloe-django
 
