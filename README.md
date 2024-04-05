@@ -54,3 +54,8 @@
 - Pour lancer le serveur Django : py manage.py runserver
            
 - Pour installer Aloe-django : pip install aloe-django
+
+- Utilistationde VADER en tant qu'analyseur de sentiment basé sur un texte url: https://github.com/cjhutto/vaderSentiment?tab=readme-ov-file#code-examples
+
+- Pour installer VADER : pip install vaderSentiment
+
