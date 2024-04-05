@@ -12,7 +12,7 @@ Feature: vader_analyser
  
         Given a negative string chain
     
-        When start vade function
+        When start vader function
     
         Then analyser send "negative sentiment"
     
