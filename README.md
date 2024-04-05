@@ -53,3 +53,4 @@
 
 - Pour lancer le serveur Django : py manage.py runserver
            
+- Pour installer Aloe-django : pip install aloe-django
